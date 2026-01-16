@@ -1,0 +1,22 @@
+// Bug 2: The Grade That's Never Excellent
+// This should give letter grades
+// But "Excellent" never displays...
+
+BEGIN
+    DISPLAY "Enter your score (0-100):"
+    INPUT score
+
+    IF score >= 60 THEN
+        DISPLAY "Grade: D - Passing"
+    ELSEIF score >= 70 THEN
+        DISPLAY "Grade: C - Satisfactory"
+    ELSEIF score >= 80 THEN
+        DISPLAY "Grade: B - Good"
+    ELSEIF score >= 90 THEN
+        DISPLAY "Grade: A - Excellent"
+    ELSE
+        DISPLAY "Grade: F - Failing"
+    ENDIF
+END
+
+// Hint: What happens if you enter 95? Trace through each condition.

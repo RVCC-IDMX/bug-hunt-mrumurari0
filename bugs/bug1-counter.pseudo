@@ -1,0 +1,16 @@
+// Bug 1: The Counter That Counts Wrong
+// This should count from 1 to 5
+// But something is wrong...
+
+BEGIN
+    SET counter TO 1
+
+    WHILE counter < 5 DO
+        DISPLAY "Count: " + counter
+        SET counter TO counter + 1
+    END WHILE
+
+    DISPLAY "Done counting to 5!"
+END
+
+// Hint: Trace through with counter values. Does it really count to 5?
