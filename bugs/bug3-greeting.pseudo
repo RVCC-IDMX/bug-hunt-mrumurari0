@@ -9,6 +9,7 @@ BEGIN
         DISPLAY "What is your name?"
         INPUT userName
         DISPLAY "Hello, " + userName + "!"
+        SET usersGreeted TO usersGreeted + 1
     END WHILE
 
     DISPLAY "All users have been greeted!"
