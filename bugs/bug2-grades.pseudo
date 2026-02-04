@@ -6,14 +6,15 @@ BEGIN
     DISPLAY "Enter your score (0-100):"
     INPUT score
 
-    IF score >= 60 THEN
-        DISPLAY "Grade: D - Passing"
-    ELSEIF score >= 70 THEN
-        DISPLAY "Grade: C - Satisfactory"
+    IF score >= 90 THEN
+        DISPLAY "Grade: A - Excellent"
     ELSEIF score >= 80 THEN
         DISPLAY "Grade: B - Good"
-    ELSEIF score >= 90 THEN
-        DISPLAY "Grade: A - Excellent"
+    ELSEIF score >= 70 THEN
+        DISPLAY "Grade: C - Satisfactory"
+    ELSEIF score >= 60 THEN
+        DISPLAY "Grade: D - Passing"
+
     ELSE
         DISPLAY "Grade: F - Failing"
     ENDIF
